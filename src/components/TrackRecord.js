@@ -6,7 +6,7 @@ import styles from './TrackRecord.module.scss';
 
 const TrackRecord = () => {
 	return (
-		<Container>
+		<Container id="track-record">
 			<SectionHeader link="Closed Deals">
 				Experienced Professionals,
 				<br />

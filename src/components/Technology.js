@@ -6,7 +6,7 @@ import styles from './Technology.module.scss';
 const Technology = () => {
 	return (
 		<div className={styles.section}>
-			<Container>
+			<Container id="technology">
 				<SectionHeader link="Our Research">Innovative Technology</SectionHeader>
 
 				<div className={styles.wrapper}>

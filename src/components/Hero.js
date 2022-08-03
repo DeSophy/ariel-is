@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 import Container from './Container';
 import Link from './Link';
 import HeroMenuItem from './HeroMenuItem';
@@ -7,6 +8,12 @@ import styles from './Hero.module.scss';
 
 const Hero = () => {
 	const menuList = HeroMenuList;
+
+	const [currentItem, setCurrentItem] = useState(0);
+
+	const hoverHandler = (index) => {
+		setCurrentItem(index);
+	};
 
 	return (
 		<div className={styles.section}>
@@ -36,19 +43,18 @@ const Hero = () => {
 						<Link linkWhite={false}>Request Now</Link>
 					</div>
 					<div className={styles.columnMenu}>
-						{menuList.map((menuItem) => (
-							<HeroMenuItem key={menuItem.title} title={menuItem.title} />
+						{menuList.map((menuItem, index) => (
+							<HeroMenuItem
+								key={menuItem.title}
+								title={menuItem.title}
+								link={menuItem.link}
+								index={menuItem.index}
+								hoverHandler={() => hoverHandler(index)}
+							/>
 						))}
 					</div>
 					<div className={styles.columnText}>
-						<p>
-							Our Investment Sales Division provides private and institutional
-							clients, equity capital, lenders, government agencies and
-							not-for-profit organizations with institutional-quality brokerage
-							services. To ensure optimal pricing and deal terms, we take a
-							holistic approach to marketing and negotiating diverse property
-							types, varying in size and complexity.
-						</p>
+						<p>{menuList[currentItem].text}</p>
 					</div>
 				</div>
 			</Container>

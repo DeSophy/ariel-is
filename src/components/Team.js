@@ -6,7 +6,7 @@ import styles from './Team.module.scss';
 const Team = () => {
 	return (
 		<div className={styles.section}>
-			<Container>
+			<Container id="team">
 				<SectionHeader link="Meet Our Team">Team Based Approach</SectionHeader>
 				<div className={styles.wrapper}>
 					<div className={`indent ${styles.text}`}>

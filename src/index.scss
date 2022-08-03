@@ -2,6 +2,7 @@ html,
 body {
 	padding: 0;
 	margin: 0;
+	scroll-behavior: smooth;
 }
 
 * {
@@ -92,6 +93,11 @@ b {
 	font-weight: normal;
 }
 
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
 /* Layout Elements */
 
 .container {
@@ -123,6 +129,45 @@ b {
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-end;
+	}
+}
+
+/* Container Animation */
+
+.hiddenContainer {
+	animation: hide 2s ease-in-out;
+}
+
+@keyframes hide {
+	0% {
+		opacity: 1;
+	}
+
+	70%,
+	100% {
+		opacity: 0;
+	}
+}
+
+.animatedContainer {
+	opacity: 1;
+	animation: show 2s ease-in-out;
+}
+
+@keyframes show {
+	0% {
+		opacity: 0;
+		transform: translateX(20%);
+	}
+
+	50% {
+		transform: translateX(0);
+	}
+
+	70%,
+	100% {
+		opacity: 1;
+		transform: translateX(0);
 	}
 }
 

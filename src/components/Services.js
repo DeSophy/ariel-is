@@ -16,7 +16,7 @@ const Services = () => {
 						<div className={styles.dLine}></div>
 					</div>
 
-					<hr />
+					<hr className={styles.servicesLine} />
 					<div className={styles.column}>
 						<div>
 							<h2>Research</h2>

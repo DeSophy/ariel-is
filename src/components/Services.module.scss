@@ -1,0 +1,48 @@
+.section {
+	background-color: #eff0f2;
+
+	h2 {
+		color: black;
+		margin-bottom: 10px;
+	}
+}
+
+.wrapper {
+	display: flex;
+	gap: 5%;
+}
+
+.column {
+	flex: 1 0 45%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.dLine {
+	width: 80px;
+	border-top: 2px solid #05affa;
+	transform: rotate(110deg);
+}
+
+hr {
+	display: none;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+	.wrapper {
+		flex-direction: column;
+	}
+
+	.dLine {
+		display: none;
+	}
+
+	hr {
+		display: block;
+		width: 50%;
+		margin: 40px 0;
+	}
+}

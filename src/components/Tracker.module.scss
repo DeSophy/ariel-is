@@ -1,0 +1,72 @@
+.section {
+	background-color: #eff0f2;
+}
+
+.trackerContainer {
+	width: 1144px;
+	max-width: 90%;
+	margin: 0 auto;
+	display: flex;
+	gap: 5%;
+}
+
+.trackerItem {
+	position: relative;
+	padding: 60px 0;
+
+	h4 {
+		margin-bottom: 0;
+	}
+
+	.type {
+		margin-bottom: 20px;
+	}
+
+	.label {
+		display: flex;
+		align-items: center;
+		transform: rotate(-90deg) translateX(-100%);
+		transform-origin: top left;
+		width: fit-content;
+		position: absolute;
+
+		p {
+			line-height: 14px;
+			font-family: 'MuseoSans 700';
+		}
+	}
+
+	.text {
+		margin-left: 40px;
+	}
+
+	.preLinkLine {
+		border-top: 2px solid #05affa;
+		width: 30px;
+		margin-right: 20px;
+	}
+}
+
+.trackerItem:hover {
+	padding-left: 40px;
+	padding-right: 40px;
+	background-color: #637081;
+
+	h4,
+	p {
+		color: white;
+		transition: none;
+	}
+}
+
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+	.trackerContainer {
+		overflow: scroll;
+	}
+
+	.trackerItem {
+		flex: 1 0 100%;
+	}
+}

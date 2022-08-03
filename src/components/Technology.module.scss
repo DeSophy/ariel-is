@@ -1,0 +1,35 @@
+.section {
+	background-color: #637081;
+	color: white;
+
+	h2 {
+		color: white;
+	}
+}
+
+.wrapper {
+	display: flex;
+	gap: 5%;
+}
+
+.column {
+	flex: 1 0 45%;
+
+	img {
+		width: 100%;
+	}
+}
+
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+	.wrapper {
+		flex-direction: column;
+	}
+
+	.column {
+		img {
+			margin-bottom: 40px;
+		}
+	}
+}

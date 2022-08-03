@@ -1,0 +1,53 @@
+.link {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	width: fit-content;
+}
+
+.linkTextBlack {
+	font-family: 'MuseoSans 700';
+	width: fit-content;
+}
+
+.linkTextWhite {
+	font-family: 'MuseoSans 700';
+	width: fit-content;
+	color: white;
+}
+
+.preLinkLine {
+	border-top: 2px solid #05affa;
+	width: 0;
+	margin-right: 0;
+}
+
+.arrow {
+	display: flex;
+	align-items: center;
+	margin-left: 20px;
+}
+
+.arrowLine {
+	border-top: 2px solid #05affa;
+	width: 30px;
+}
+
+.arrowHead {
+	border-top: 2px solid #05affa;
+	border-right: 2px solid #05affa;
+	width: 10px;
+	height: 10px;
+	transform: rotate(45deg);
+	position: relative;
+	right: 9px;
+}
+
+.link:hover .preLinkLine {
+	width: 30px;
+	margin-right: 20px;
+}
+
+.link:hover .arrowLine {
+	width: 0;
+}

@@ -1,0 +1,36 @@
+.section {
+	background-color: #eff0f2;
+}
+
+.wrapper {
+	display: flex;
+	gap: 5%;
+}
+
+.text {
+	flex: 1 0 30%;
+}
+
+.photos {
+	display: flex;
+	flex-wrap: wrap;
+
+	.photo {
+		flex: 1 0 20%;
+	}
+
+	img {
+		width: 100%;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.wrapper {
+		flex-direction: column;
+	}
+
+	.text {
+		margin-bottom: 40px;
+	}
+}

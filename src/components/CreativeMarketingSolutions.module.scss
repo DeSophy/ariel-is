@@ -1,0 +1,50 @@
+.wrapper {
+	display: flex;
+	gap: 5%;
+}
+
+.column {
+	flex: 1 0 45%;
+
+	img {
+		width: 100%;
+	}
+
+	.description {
+		margin-bottom: 40px;
+	}
+
+	h3 {
+		margin-bottom: 40px;
+	}
+
+	.channels {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		h4 {
+			margin: 0;
+		}
+
+		.dLine {
+			width: 40px;
+			border-top: 2px solid #05affa;
+			transform: rotate(110deg);
+		}
+	}
+}
+
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+	.wrapper {
+		flex-direction: column;
+	}
+
+	.column {
+		img {
+			margin-bottom: 40px;
+		}
+	}
+}

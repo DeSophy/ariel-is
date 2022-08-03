@@ -1,0 +1,73 @@
+.section {
+	background-image: url(../../public/assets/is-hero.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+}
+
+.heroLine {
+	width: 50%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.columnMain {
+	flex: 1 0 40%;
+}
+
+.columnMenu,
+.columnText {
+	flex: 1 0 25%;
+}
+
+.columnMenu {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
+
+.menuItem {
+	cursor: pointer;
+
+	h4 {
+		margin-bottom: 10px;
+	}
+}
+
+.arrow {
+	display: flex;
+	align-items: center;
+}
+
+.arrowLine {
+	border-top: 2px solid #05affa;
+	width: 30px;
+}
+
+.arrowHead {
+	border-top: 2px solid #05affa;
+	border-right: 2px solid #05affa;
+	width: 10px;
+	height: 10px;
+	transform: rotate(45deg);
+	position: relative;
+	right: 9px;
+}
+
+.menuItem:hover .arrowLine {
+	width: 100px;
+}
+
+.menuItem:hover {
+	color: #05affa;
+	transition: none;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+	.columnMenu,
+	.columnText {
+		display: none;
+	}
+}

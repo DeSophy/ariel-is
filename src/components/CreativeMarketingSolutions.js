@@ -13,7 +13,7 @@ const CreativeMarketingSolutions = () => {
 			<div className={styles.wrapper}>
 				<div className={`indent ${styles.column}`}>
 					<img
-						src="/assets/cms-background.png"
+						src="/assets/cms-background.jpg"
 						alt="Creative Marketing Solutions"
 					/>
 				</div>
